@@ -1,56 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slider de imagenes con puro CSS - MagtimusPro</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
 <body>
 
-    <div class="container-all">
+<div class="header">
+  <h1> Canal+</h1>
+</div>
 
-        <input type="radio" id="1" name="image-slide" hidden/>
-        <input type="radio" id="2" name="image-slide" hidden/>
-        <input type="radio" id="3" name="image-slide" hidden/>
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Programas</li>
+      <li>Publicidad</li>
+      <li>Contacto</li>
+	  <li>Tienes un Programa¿?</li>
+    </ul>
+  </div>
 
-        <div class="slide">
-
-            <div class="item-slide">
-                <img src="Images/img1.jpg">
-            </div>
-
-            <div class="item-slide">
-                <img src="Images/img2.jpg">
-            </div>
-
-            <div class="item-slide">
-                <img src="Images/img3.jpg">
-            </div>
-
-        </div>
-
-        <div class="pagination">
-           
-            <label class="pagination-item" for="1">
-                <img src="Images/img1.jpg">
-            </label>
-            
-            <label class="pagination-item" for="2">
-                <img src="Images/img2.jpg">
-            </label>
-            
-            <label class="pagination-item" for="3">
-                <img src="Images/img3.jpg">
-            </label>
-            
-        </div>
-        
-    </div>
-      
+  <div class="col-6 col-s-9">
+    <h2>EN VIVO</h2>
+    <p>      
 <!-- Paste the following into the <head>  -->
 <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
 <link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
@@ -71,7 +139,27 @@
  <script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
  <script type="text/javascript">
   var player = videojs('videojs'); </script>
-            
-</body>
+            .</p>
+  </div>
 
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Alguna Pelicula¿?</h2>
+      <p>Alguna pelicula en especial que quieras mirar¿?.</p>
+      <h2>Chat en Vivo</h2>
+      <p>Comunicate con nosotros.</p>
+    </div>
+  </div>
+</div>
+
+<iframe width="1500" height="500" src="https://laredbachi.000webhostapp.com/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+  </div>
+</div>
+<div class="footer">
+  <p>Copyright © 2020 Canal Mas - Todos los derechos reservados.</p>
+</div>
+
+</body>
 </html>
