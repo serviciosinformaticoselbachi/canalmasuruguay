@@ -1,167 +1,612 @@
 <html>
 <head>
-<title>CANAL+ Mas de Dios para tu vida - Canal de tv Cristiano</title>
-<meta name="description" content="Mas de Dios - Canal+, peliculas cristianas,musica cristiana,palabra de Dios" />
-<meta name = "viewport" content = "initial-scale = 1.1, user-scalable = no"><meta charset="UTF-8" />
+<title>CANALMAS</title>
+<meta name="description" content="Mas de Dios" />
 <meta name="robots" content="all,index,follow" />
-<link rel="icon" href="https://raw.githubusercontent.com/serviciosinformaticoselbachi/canalmasuruguay/master/Images/logo.ico">
-<link rel="apple-touch-icon" href="https://github.com/serviciosinformaticoselbachi/canalmasuruguay/blob/master/Images/prueba-logo.png">
+<meta name = "viewport" content = "initial-scale = 1.1, user-scalable = no"><meta charset="UTF-8" />
+<link rel="manifest" href="https://www.socialcreator.com/canalmas/manifest.json">
+<link rel="apple-touch-icon" href="https://www.socialcreator.com/srv/imgs/gen/18489_ico.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="CANALMAS">
+<link rel="stylesheet" href="https://www.socialcreator.com/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-* {
-  box-sizing: border-box;
+.w3-animate-opacity{-webkit-animation:opac 1s;animation:opac 1s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+
+html{min-height:100%;overflow:hidden;}
+body
+{
+margin:0px;padding:0px;font-family:Roboto;}
+
+h1.cab{margin-left:10px;}
+h3.cab{margin-left:10px;}
+.txtgen{font-size:18px;}
+.txtgen2{font-size:16px;}
+@media all and (max-width: 460px)
+{
+	h1.cab{font-size:22px;}
+	h3.cab{font-size:16px;}
+	.txtgen{font-size:16px;}
+	.txtgen2{font-size:16px;}
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.topcmain{border:0px;transition:background-color 0.2s ease;white-space:nowrap;cursor:pointer;}
+.topcmain:hover{background-color:#939393;}
+@media all and (max-width: 790px)
+{
+	.topcmain:hover{background-color:#939393;}
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
+hr{position:inherit;height: 1px;border: 0;border-top: 1px solid;margin: 1em 0;padding: 0;}
+
+.brillar{opacity: 0.7;transition:opacity 0.2s ease;}
+.brillar:hover{opacity: 1;}
+
+.boton1{
+	padding:10px;
+	font-size:18px;
+	font-family:Roboto;
+	cursor:pointer;
+	transition:background-color 0.2s ease;
+	color:#FFFFFF;
+	background-color:#;
+}
+.boton1:hover{background-color:#1e1e1e;}
+.somb{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.tit_card{font-size:18px;margin:5px;}
+.subtit_card{font-size:14px;margin:5px;}
+.fecha_card{font-size:14px;margin:5px;}
+
+.tprodimgs{width:500px;}
+.tprodflecha{left:462px;}
+.mySlidesProd{max-width:490px;}
+.divmapa{width:500px;}
+.videoprod{width:500px;height:375px;}
+@media all and (max-width: 500px)
+{
+	.tprodimgs{width:250px;}
+	.tprodflecha{left:212px;}
+	.mySlidesProd{max-width:240px;}
+	.divmapa{width:250px;}
+	.videoprod{width:250px;height:188px;}
 }
 
-html {
-  font-family: "Lucida Sans", sans-serif;
+
+#onoffico{font-size:24px;color:#666666;position:relative;top:2px;left:-2px;}
+@media only screen and (min-width: 791px)
+{
+	#onoffico{font-size:28px;color:#666666;position:relative;top:3px;left:-2px;}
 }
 
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 15px;
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 4px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #4CAF50; color: #FFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 14px; margin: 3px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 36px;
+    border: 2px solid #999999; border-radius: 4px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
 }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width:600px;
 }
 
-.menu li:hover {
-  background-color: #0099cc;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+	* {
+	    box-sizing: border-box;
+	}
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
+	.row-grid:after {
+	    content: "";
+	    clear: both;
+	    display: block;
+	}
+
+	[class*="col-"] {
+	    float: left;
+	    padding: 15px;
+	    width: 100%;
+	}
+	@media only screen and (min-width: 791px) {
+	    .col-2 {width: 50%;}
+	    .col-3 {width: 33.33%;}
+	    .col-4 {width: 25%;}
+	    .col-5 {width: 20%;}
+	    .col-6 {width: 16.66%;}
+	    .col-7 {width: 14.28%;}
+	    .col-8 {width: 12.5%;}
+	}
+	
+		.centrado1{float:left;position:relative;left:50%;}
+	.centrado2{float:left;position:relative;left:-50%;}
+
+		@media only screen and (min-width: 791px) {
+	    .col-22 {width: auto;}
+	}
+	
+	@media only screen and (min-width: 1116px) {
+	    .col-33 {width: auto;}
+	}
+	@media all and (min-width: 791px)
+	{
+		#ifrprinc{height:calc(100% - 110px);width:100%;position:absolute;z-index:-1;top:110px;left:0px;}
+	}
+
+	@media all and (max-width: 790px)
+	{
+		#ifrprinc{height:calc(100% - 40px);width:100%;position:absolute;z-index:-1;top:40px;left:0px;}
+	}
+	.hoverlight:hover{box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);}
+	.av_cr{color:#666666;font-size:12px!important;position:relative;top:-1px;cursor:pointer;}
+	.av_ci{color:#CC0000;font-size:9px!important;position:relative;top:-2px;}
+	@media all and (min-width: 791px)
+	{
+		#tcab{height:80px;}
+		#tcab_td_aux{height:80px;}
+		#imgcab{max-height:76px;}		#lema{font-weight:bold;font-size:24px;}		.icotop_2{font-size:14px;position:absolute;top:12px;right:108px;}
+		.icotop_22{font-size:14px;position:absolute;top:12px;right:5px;}
+		.tdicotop{padding:15px;font-size:24px;color:#9E9E9E;}
+		#avisos{position:absolute;top:40px;right:5px;z-index:99;display:none;}
+		
+					#tcab_aux{display:none;}
+					#btnatras{display:none;}
+					#btnslide{display:none;}
+			}
+
+	@media all and (max-width: 790px)
+	{
+		#tcab{height:40px;}
+		#tcab_td_aux{height:40px;}
+		#imgcab{max-height:36px;}		#lema{font-weight:bold;font-size:12px;}		.icotop_2{font-size:10px;position:absolute;top:2px;right:73px;}
+		.icotop_22{font-size:10px;position:absolute;top:2px;right:5px;}
+		.tdicotop{padding:10px;font-size:15px;color:#9E9E9E;}
+		#avisos{position:absolute;top:35px;right:5px;z-index:99;display:none;}
+
+						#tcab{position:fixed;top:0px;}
+				#tcab_aux{display:inline;}
+					#btnatras{display:none;}
+			}
+	.topcmain_sl{border:0px;transition:background-color 0.2s ease;white-space:nowrap;cursor:pointer;width:100%;}
+			#tslide_2{background-color:#FAFAFA;color:#000000;}
+		.topcmain_sl:hover{background-color:#EEEEEE;}
+			@media all and (max-width: 790px)
+		{
+			#tslide_2{background-color:#757575;color:#FAFAFA;}
+			.topcmain_sl:hover{background-color:#939393;}
+		}
+		#tmenu{background-color:#757575;color:#FAFAFA;border:0px;width:100%;z-index:99;}
+	#tmenu_2{border:0px;};
+	#tmenu_aux{border:0px;}
+	@media all and (min-width: 791px)
+	{
+		#tmenu{background-color:#757575;color:#FAFAFA;}
+					table.defecto{
+	            position: static ;
+			}
+			table.fijo{
+	            position: fixed ;
+	            top: 0px ;
+			}
+			table.defecto_aux{
+				display:none ;
+			}
+			table.fijo_aux{
+	            display:inline ;
+		    }
+		    #tmenu_td_aux{height:30px;}
+		#tmenu_2{width:1%;}			.txtmenu{height:30px;}
+		
+	}
+	
+	@media all and (max-width: 790px)
+	{
+					table.defecto{
+				display:none ;
+			}
+			table.fijo{
+	            display:none ;
+		    }
+			table.defecto_aux{
+				display:none ;
+			}
+			table.fijo_aux{
+	            display:none ;
+		    }
+					.txtmenu{height:26px;}
+			}
+
 </style>
+<script src="https://www.socialcreator.com/jquery-1.11.3.min.js"></script>
+<script src="https://www.socialcreator.com/dom/js_getCookie.js"></script>
+<script language="javascript">
+
+$(document).ready(function(){
+	$(document).click(function() {
+	    $("#avisos").hide();
+	});
+});
+
+function fcaddia(d_str,idaviso)
+{
+	var d_aux = new Date(2000+parseInt(d_str.substr(4,2)),parseInt(d_str.substr(2,2))-1,parseInt(d_str.substr(0,2)),parseInt(d_str.substr(6,2)),parseInt(d_str.substr(8,2)));
+	d_aux.setMinutes(d_aux.getMinutes() - d_aux.getTimezoneOffset());
+	var d_aux_3=new Date(d_aux);
+	d_aux_3.setHours(0,0,0,0);
+
+	var cad_dia="";
+	var today=new Date();
+	today.setHours(0,0,0,0);
+	var yesterday=new Date(today);
+	yesterday.setDate(yesterday.getDate()-1)
+	if(d_aux_3.getTime()==today.getTime()){cad_dia="Hoy";}
+	else if(d_aux_3.getTime()==yesterday.getTime()){cad_dia="Ayer";}
+	else
+	{
+		var dia_aux=d_aux_3.getDate();if(dia_aux<10){dia_aux="0"+dia_aux;};
+		var mes_aux=d_aux_3.getMonth()+1;if(mes_aux<10){mes_aux="0"+mes_aux;};
+					cad_dia=dia_aux+"-"+mes_aux+"-"+d_aux_3.getFullYear();
+			};
+	var h_aux=d_aux.getHours();if(h_aux<10){h_aux="0"+h_aux;};
+	var mi_aux=d_aux.getMinutes();if(mi_aux<10){mi_aux="0"+mi_aux;};
+	cad_dia+="&nbsp;"+h_aux+":"+mi_aux;
+
+	$(".fh"+idaviso).html(cad_dia);
+};
+
+function fvisto(id)
+{
+	$(".av_ci"+id).hide();
+	$(".av_cr"+id).hide();
+	var n_aux=$("#av_nnuevos").html()-1;
+	if(n_aux==0){$("#av_nnuevos").hide();}
+	else{$("#av_nnuevos").html(n_aux);};
+    $.ajax({
+      type: "GET",
+      url: "https://www.socialcreator.com/dom/aviso_leido.php?idusu=9899870",
+      data: "avle="+id
+     });
+}
+
+function falert(cad)
+{
+	document.getElementById("modaltxt").innerHTML=cad;
+	document.getElementById('divmodal').style.display="block";
+}
+function fconfirm(cad,f,p)
+{
+	document.getElementById("modaltxtconfirm").innerHTML=cad;
+	$("#btnmodalok").prop('onclick',null).off('click');	$("#btnmodalok").click(function() {
+		$('#divmodalconfirm').hide();
+				if(f.indexOf('@')!=-1)
+		{
+			f=f.split("@");
+			if(f.length==3){self.frames[f[0]][f[1]][f[2]](p);}
+			else if(f.length==2){self.frames[f[0]][f[1]](p);};
+		}
+		else
+		{
+    		window[f](p);
+    	};
+  	});
+	document.getElementById('divmodalconfirm').style.display="block";
+}
+
+function fcambionotif()
+{
+	var chk=document.getElementById("chknotif");
+	if(chk.checked)
+	{
+		self.parent.location="https://www.socialcreator.com/canalmas/push_grant.html";
+	}
+	else
+	{
+		if(getCookie('iden')){$.get("https://www.socialcreator.com/dom/push_cambio.php?idapp=18489&modo=0");};
+	}
+}
+
+jQuery(function( $ )
+{
+	
+		var menu = $( "#tmenu" );
+	var menu_aux = $( "#tmenu_aux" );
+	var originalMenuTop = -1;
+    var view = $( window );
+		
+	function rewrite_menu()
+    {
+    	    	    			var w_scr = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var element=document.getElementById("idmenu");
+
+		var ocultar_resto=false;
+		var i_ini=1;		for(var i=i_ini;i<element.children.length-1;i++)
+		{
+			element.children[i].style.display='';
+		};
+		document.getElementById("seccmas").style.display='none';
+
+		var w=0;
+		if(i_ini==2){w+=element.children[0].offsetWidth+element.children[1].offsetWidth;}
+		else if(i_ini==1){w+=element.children[0].offsetWidth;};
+		
+				
+		for(var i=i_ini;i<element.children.length-1;i++)
+		{
+			if(ocultar_resto){element.children[i].style.display='none';}
+			else
+			{
+				var w_aux=element.children[i].offsetWidth;
+				var w_mas=42;
+				if((i+1)==(element.children.length-1)){w_mas=0;}												if(i==i_ini || ((w+w_aux+w_mas)<=w_scr))
+				{
+					element.children[i].style.display='';
+					w+=w_aux;
+				}
+				else
+				{
+										ocultar_resto=true;
+					element.children[i].style.display='none';
+					document.getElementById("seccmas").style.display='';
+				}
+			}
+		};
+	    };
+
+		rewrite_menu();
+	$(window).load(function(){rewrite_menu();});
+	
+	view.bind(
+	    "resize",
+	    rewrite_menu
+	    );
+
+	
+		    view.bind(
+	        "scroll resize",
+	        function()
+			{
+				if(originalMenuTop==-1){originalMenuTop=menu.offset().top;};
+				var viewTop = view.scrollTop();
+							    if(viewTop > originalMenuTop)
+			    {
+			    	if(!menu.is( ".fijo" ))
+			    	{
+			    		menu.removeClass('defecto').addClass('fijo');
+			    		menu_aux.removeClass('defecto_aux').addClass('fijo_aux');
+			    	}
+			    }
+			    else if(!menu.is( ".defecto" ))
+			    {
+		    		menu.removeClass('fijo').addClass('defecto');
+		    		menu_aux.removeClass('fijo_aux').addClass('defecto_aux');
+		    		originalMenuTop=menu.offset().top;			    }
+			});
+	});
+</script>
+
+
 </head>
 <body>
-
-	<td style="padding:0;"><table style="border:0px;width:auto;margin-left:10px;" colspacing="0">
+	<table id="tcab_aux">
+	<tr>
+	<td id="tcab_td_aux"></td>
+	</tr>
+	</table>
+	<table id="tcab" style="background-color:#F5F5F5;width:100%;z-index:101;border-bottom:1px solid #BDBDBD;">	<tr>
+				<td id="btnslide" style="width:1%;"><i class="material-icons" style="cursor:pointer;font-size:20px;position:relative;top:2px;margin-left:10px;color:#9E9E9E;" onclick="fslide(1);">&#xE5D2;</i></td>
+				<td style="padding:0;"><table style="border:0px;width:auto;margin-left:10px;" colspacing="0">
 		<tr>
 					<td><a href="https://www.socialcreator.com/canalmas"><img id="imgcab" style="border:0px;" alt="Logo de CANALMAS" src="https://www.socialcreator.com/srv/imgs/gen/18489_icohome.png"></a></td>
 							<td id="lema" style="padding:5px;color:#212121;">CANALMAS</td>
 				</tr>
-         
-      
+		</table></td>
+				<td style="color:#FFFFFF;" align="right">
+				<table style="border:0px">
+		<tr>
+					<td class="hoverlight tdicotop" style="cursor:pointer;" onclick="$('#avisos').toggle();event.stopPropagation();"><i class='fa fa-bell'></i></td>
+				</tr>
+		</table>
+
+			   		<div id="avisos" class="w3-dropdown-content w3-border" style="z-index:99;">
+			<table style="border:0;width:100%;">
+			<tr>
+			<td>
+			<i onClick="$('#avisos').hide();event.stopPropagation();" class="fa fa-times" style="cursor:pointer;margin:5px;"></i>
+			</td>
+							<td>
+								    <table style="border:0px;margin-left:auto;margin-right:10px;width:1%;">
+				    <tr>
+				    <td><i id="onoffico" class="fa fa-bullhorn"></i></td>
+				    <td onclick="event.stopPropagation();">
+					<div class="onoffswitch">
+						<input type="checkbox" name="chknotif" class="onoffswitch-checkbox" id="chknotif" onclick="fcambionotif();">
+					    <label class="onoffswitch-label" for="chknotif">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+					</td>
+					</tr>
+					</table>
+				</td>
+						</tr>
+			<tr><td colspan="2" style="height:1px;background-color:#CCCCCC;padding:0;"></td></tr>
+			</table>
+
+			
+	   			   		    <span class="w3-padding">No hay ninguna alerta</span>
+	   			    	</div>
+	    				</td>
+		</tr>
+	</table>
+	<table id="tmenu_aux" class="defecto_aux">
+	<tr>
+	<td id="tmenu_td_aux"></td>
+	</tr>
+	</table>
+    <table id="tmenu" class="defecto" style="z-index:101;" cellpadding="0" cellspacing="0">
+    <tr><td>
+    <table id="tmenu_2" cellpadding="0" cellspacing="0">
+    <tr id="idmenu">
+			<td id="btnhome" style="width:1%;" align="center"><a href="https://www.socialcreator.com/canalmas"><i class="material-icons" style="font-size:20px;position:relative;top:2px;margin:0 10px;">&#xE88A;</i></a></td>
+	        <td id="secc115305" nowrap align="center">
+	        <table class="topcmain" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115305';" cellpadding="0" cellspacing="0">
+	        	        <tr class="txtmenu"><td align="center" style="padding:0 10px 0 10px;font-size:16px;">INICIO</td></tr>	        </table></a>
+        </td>
+            <td id="secc114877" nowrap align="center">
+	        <table class="topcmain" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=114877';" cellpadding="0" cellspacing="0">
+	        	        <tr class="txtmenu"><td align="center" style="padding:0 10px 0 10px;font-size:16px;">CONTACTO</td></tr>	        </table></a>
+        </td>
+            <td id="secc115307" nowrap align="center">
+	        <table class="topcmain" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115307';" cellpadding="0" cellspacing="0">
+	        	        <tr class="txtmenu"><td align="center" style="padding:0 10px 0 10px;font-size:16px;">PROGRAMA TU CANAL</td></tr>	        </table></a>
+        </td>
+            <td id="secc115313" nowrap align="center">
+	        <table class="topcmain" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115313';" cellpadding="0" cellspacing="0">
+	        	        <tr class="txtmenu"><td align="center" style="padding:0 10px 0 10px;font-size:16px;">DONAR</td></tr>	        </table></a>
+        </td>
+        <td id="seccmas" class="topcmain" style="display:none;" align="center" onclick="fslide(1);"><i class="material-icons" style="font-size:20px;position:relative;top:2px;margin:0 10px 0 10px;">&#xE5D4;</i></td>
+    </tr>
+    </table>
+    </td></tr>
+    </table>
+
+	<script language="javascript">
+	function fslide(modo)
+	{
+		var px=0;
+		if(modo==0){px=-1000;};
+		document.getElementById("tslide").style.left=px+"px";
+	}
+	</script>
+	<div id="tslide" style="height:100%;overflow-x:hidden;overflow-y:auto;position:fixed;top:0px;left:-1000px;z-index:102;transition:left 0.2s ease;">
+	<table class="w3-card-4" id="tslide_2">
+	<tr>
+		<td align="right" style="padding-right:20px;"><a style="text-decoration:none;font-size:28px;" href="javascript:var v=fslide(0);">&times;</a></td>
+	</tr>
+            <tr><td style="white-space:nowrap;">
+	        <table class="topcmain_sl" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115305';">
+	        <tr>
+	        	        <td class="txtmenu_sl" style="padding:0 15px 0 5px;font-size:16px;">INICIO</td>	        </tr>
+	        </table>
+        </td></tr>
+            <tr><td style="white-space:nowrap;">
+	        <table class="topcmain_sl" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=114877';">
+	        <tr>
+	        	        <td class="txtmenu_sl" style="padding:0 15px 0 5px;font-size:16px;">CONTACTO</td>	        </tr>
+	        </table>
+        </td></tr>
+            <tr><td style="white-space:nowrap;">
+	        <table class="topcmain_sl" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115307';">
+	        <tr>
+	        	        <td class="txtmenu_sl" style="padding:0 15px 0 5px;font-size:16px;">PROGRAMA TU CANAL</td>	        </tr>
+	        </table>
+        </td></tr>
+            <tr><td style="white-space:nowrap;">
+	        <table class="topcmain_sl" onmousedown="self.location='https://www.socialcreator.com/canalmas/?s=115313';">
+	        <tr>
+	        	        <td class="txtmenu_sl" style="padding:0 15px 0 5px;font-size:16px;">DONAR</td>	        </tr>
+	        </table>
+        </td></tr>
+    	</table>
+	</div>
 
 
-            
-                             
-      
-<!-- Paste the following into the <head>  -->
-<link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
-<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
-<!-- Paste the following into the <body> -->
-<video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto">
-
-      <source src="https://5d52c82b4a7e3.streamlock.net:1936/canalmas/canalmas/playlist.m3u8" type="application/x-mpegURL">
-   <source src="rtmps://5d52c82b4a7e3.streamlock.net:1936/canalmas/canalmas" type="application/flash">
-    <p class="vjs-no-js">
-  To view this video please enable JavaScript, and consider upgrading to a web browser that
-  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
- </p>
-</video>
-
-<script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
-
- <script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
- <script type="text/javascript">
-  var player = videojs('videojs'); </script>
-<div align="center"><a href="https://5d52c82b4a7e3.streamlock.net:1936/canalmas/canalmas/playlist.m3u8" alt="Android HTTP"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/android.gif" border="0" /></a>
-<a href="rtsp://5d52c82b4a7e3.streamlock.net/canalmas/canalmas" alt="Blackberry"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/blackberry.gif" border="0" /></a>
-<a href="rtsp://5d52c82b4a7e3.streamlock.net/canalmas/canalmas" alt="Android RTSP"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/android.gif" border="0" /></a>
-<a href="https://5d52c82b4a7e3.streamlock.net:1936/canalmas/canalmas/playlist.m3u8" alt="Iphone"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/iphone.gif" border="0" /></a> 
-<a href="https://tv.tvcontrolcp.com:2000/tunein/canalmas/v/m3u8" alt="VLC"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/vlc.gif" border="0" /></a></div>
-  
-            
-  
-  
-  <div align="center"><p>↓↓↓Descargue Nuestra App↓↓↓</p></div>
-
-  
-  
-<div align="center"><a href="https://play.google.com/store/apps/details?id=canal.mas5&hl=es/"><img src="https://i.ibb.co/8cmRRMs/GOOGLEPLAY.png" alt="GOOGLEPLAY" width="30%" height="30%"></a>
-</div>
-
-  
-  
-</div>
+<div id="divmodal" class="modal" style="display:none;" onclick="this.style.display='none';">
+  <div id="divmodalcontent" class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modaltxt"></p>
   </div>
 </div>
-<div class="footer">
-  <p>Copyright © 2020 Canal Mas - Todos los derechos reservados.</p>
+<div id="divmodalconfirm" class="modal" style="display:none;">
+  <div class="modal-content">
+    <p id="modaltxtconfirm"></p>
+    <button class="w3-btn w3-small w3-blue-grey" id="btnmodalok">Aceptar</button>
+    <button class="w3-btn w3-small w3-light-grey" style="margin-left:10px;" onclick="$('#divmodalconfirm').hide();">Cancelar</button>
+  </div>
 </div>
+
+
+
+
+	<iframe id="ifrprinc" src="https://www.socialcreator.com/canalmas/?s=115305&gotourl=1&url=https%3A%2F%2Fcanalmasuruguay.com%2F"></iframe>
+
 
 </body>
 </html>
