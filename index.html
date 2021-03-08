@@ -1,153 +1,148 @@
-< html  lang = " es " >
-  < cabeza >
-    < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
-     < meta  charset = " utf-8 " >
-< título > CANAL + URUGUAY </ título >
-< meta  name = " description " content = " CANAL + MAS DE DIOS CANAL CRISTIANO 24HS. " />
 
-<! - Datos de la tarjeta de Twitter ->
-< meta  name = " twitter: card " value = " summary " >
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+<title>CANAL+ URUGUAY</title>
+<meta name="description" content="CANAL+ MAS DE DIOS CANAL CRISTIANO 24HS." />
 
-<! - Datos de Open Graph ->
-< meta  property = " og: title " content = " CANAL + " />
-< meta  property = " og: type " content = " B @ chi " />
-< meta  property = " og: url " content = " https://canalmasuruguay.com/ " />
-< meta  property = " og: image " content = " https://canalmasuruguay.com/images/snapshot2.png " />
-< meta  property = " og: description " content = " SERVICIOS INFORMATICOS " />
-    </ cabeza >
-    < cuerpo >
+<!-- Twitter Card data -->
+<meta name="twitter:card" value="summary">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="CANAL+" />
+<meta property="og:type" content="B@chi" />
+<meta property="og:url" content="https://canalmasuruguay.com/" />
+<meta property="og:image" content="https://canalmasuruguay.com/images/snapshot2.png" />
+<meta property="og:description" content="SERVICIOS INFORMATICOS" />
+    </head>
+    <body>
 
 
 
-< estilo >
+<style>
 * {
-  tamaño de caja: caja de borde;
+  box-sizing: border-box;
 }
 
-. fila :: después de {
-  contenido : "" ;
-  claro : ambos;
-  pantalla : mesa;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-[ clase * = "col-" ] {
-  flotar : izquierda;
-  relleno : 15 px ;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
 
 html {
-  familia de fuentes : "Lucida Sans" , sans-serif;
+  font-family: "Lucida Sans", sans-serif;
 }
 
-. encabezado {
-  color de fondo : # 9933cc ;
-  color : # ffffff ;
-  relleno : 15 px ;
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
 }
 
-. menu  ul {
-  tipo de estilo de lista : ninguno;
-  margen : 0 ;
-  acolchado : 0 ;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-. menu  li {
-  relleno : 8 px ;
-  margen inferior : 7 px ;
-  color de fondo : # 33b5e5 ;
-  color : # ffffff ;
-  caja-sombra : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.12 ) ,  0  1 px  2 px  rgba ( 0 , 0 , 0 , 0.24 );
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-. menu  li : hover {
-  color de fondo : # 0099cc ;
+.menu li:hover {
+  background-color: #0099cc;
 }
 
-. aparte {
-  color de fondo : # 33b5e5 ;
-  relleno : 15 px ;
-  color : # ffffff ;
-  alineación de texto : centro;
-  tamaño de fuente : 14 px ;
-  caja-sombra : 0  1 px  3 px  rgba ( 0 , 0 , 0 , 0.12 ) ,  0  1 px  2 px  rgba ( 0 , 0 , 0 , 0.24 );
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-. pie de página {
-  color de fondo : # 0099cc ;
-  color : # ffffff ;
-  alineación de texto : centro;
-  tamaño de fuente : 12 px ;
-  relleno : 15 px ;
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
 }
 
-/ * Para teléfonos móviles: * /
-[ clase * = "col-" ] {
-  ancho : 100 % ;
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
 }
 
-@media  solo pantalla y ( ancho mínimo : 600 px ) {
-  / * Para tabletas: * /
-  . col-s-1 { ancho : 8.33 % ;}
-  . col-s-2 { ancho : 16.66 % ;}
-  . col-s-3 { ancho : 25 % ;}
-  . col-s-4 { ancho : 33,33 % ;}
-  . col-s-5 { ancho : 41,66 % ;}
-  . col-s-6 { ancho : 50 % ;}
-  . col-s-7 { ancho : 58,33 % ;}
-  . col-s-8 { ancho : 66.66 % ;}
-  . col-s-9 { ancho : 75 % ;}
-  . col-s-10 { ancho : 83,33 % ;}
-  . col-s-11 { ancho : 91.66 % ;}
-  . col-s-12 { ancho : 100 % ;}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
 }
-@media  solo pantalla y ( ancho mínimo : 768 px ) {
-  / * Para escritorio: * /
-  . col-1 { ancho : 8.33 % ;}
-  . col-2 { ancho : 16.66 % ;}
-  . col-3 { ancho : 25 % ;}
-  . col-4 { ancho : 33,33 % ;}
-  . col-5 { ancho : 41,66 % ;}
-  . col-6 { ancho : 50 % ;}
-  . col-7 { ancho : 58,33 % ;}
-  . col-8 { ancho : 66,66 % ;}
-  . col-9 { ancho : 75 % ;}
-  . col-10 { ancho : 83,33 % ;}
-  . col-11 { ancho : 91.66 % ;}
-  . col-12 { ancho : 100 % ;}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
-</ estilo >
-</ cabeza >
-< cuerpo >
+</style>
+</head>
+<body>
 
-< div  class = " encabezado " >
-  < h1 > Canal + </ h1 >
-
-
+<div class="header">
+  <h1>Canal+</h1>
 
 
 
 
-</ div >
+
+
+</div>
 
  
 
-< div  class = " fila " >
-  < div  class = " col-3 col-s-3 menu " >
-    < ul >
-      < Li > < un  href = " https://canalmasuruguay.com/ " > EN VIVO </ una > </ li >
-      < Li > < un  href = " https://wa.me/59893422446 " > WhatsApp </ una > </ li >
-       < Li > < un  href = " https://canalmasuruguay.com/biblia/01_001.htm " > LEA LA BIBLIA EN LÍNEA </ a > </ li >
-      < Li > < un  href = "" > CORREO </ una > </ li >
-      < Li > < un  href = "" > PROGRAMA TU CANAL </ una > </ li >
-      < Li > < un  href = " https://play.google.com/store/apps/details?id=canal.mas5 " > DESCARGA NUESTRA APLICACION </ una > </ li >
-< Li > < un  href = " https://www.facebook.com/TVRECONECTANDO " > FACEBOOK DE RECONECTANDO </ una > </ li >
-< Li > < un  href = " https://www.facebook.com/CanalmasUruguay " > DALE ME GUSTA A NUESTRA PAGINA </ una > </ li >
-< Li > < un  href = " https://www.facebook.com/CanalmasUruguay " > comparti NUESTRA PAGINA </ una > </ li >
-< Li > < un  href = " https://wa.me/59893422446 " > PEDIDOS DE ORACION </ una > </ li >
-< Li > < un  href = " https://canalmasuruguay.com/TRAILER.html " > TRAILER DE PELICULAS </ una > </ li >
-      < Li > < un  href = " https://www.paypal.com/paypalme/servicioselbachi?locale.x=es_XC " > DONAR-TU APOYO AQUI </ una >
-    </ ul >
-  </ div >
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="https://canalmasuruguay.com/">EN VIVO</a></li>
+      <li><a href="https://wa.me/59893422446">WhatsApp</a></li>
+       <li><a href="https://canalmasuruguay.com/biblia/01_001.htm">LEA LA BIBCLIA ONLINE</a></li>
+      <li><a href="">CORREO</a></li>
+      <li><a href="">PROGRAMA TU CANAL</a></li>
+      <li><a href="https://www.paypal.com/paypalme/servicioselbachi?locale.x=es_XC">DONAR-TU APOYO AQUI</a>
+    </ul>
+  </div>
  
 
 
@@ -156,137 +151,128 @@ html {
 
 
   
-  < div  class = " col-6 col-s-9 " >
-    < h1 > CANAL EN VIVO </ h1 >
-    < p > <! - Pegue lo siguiente en el <head> ->
-< link  href = " https://vjs.zencdn.net/7.3.0/video-js.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+  <div class="col-6 col-s-9">
+    <h1>CANAL EN VIVO</h1>
+    <p><!-- Paste the following into the <head>  -->
+<link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
 
-  <! - Código de píxel de Facebook ->
-< guión >
-! función ( f , b , e , v , n , t , s )
-{ if ( f . fbq ) return ; n = f . fbq = función ( ) { n . callMethod ?
-n . callMethod . aplicar ( n , argumentos ) : n . cola . empujar ( argumentos ) } ;
-si ( ! f . _fbq ) f . _fbq = n ; n . empujar = n ; n . cargado = ! 0 ; n . versión = '2.0' ;
-n . cola = [ ] ; t = b . createElement ( e ) ; t . async = ! 0 ;
-t . src = v ; s = b . getElementsByTagName ( e ) [ 0 ] ;
-s . parentNode . insertBefore ( t , s ) } ( ventana ,  documento , 'script' ,
-'https://connect.facebook.net/en_US/fbevents.js' ) ;
-fbq ( 'init' ,  '3290960020986065' ) ;
-fbq ( 'pista' ,  'Vista de página' ) ;
-</ script >
-< noscript > < img  height = " 1 " width = " 1 " style = " display: none "
-src = " https://www.facebook.com/tr?id=3290960020986065&ev=PageView&noscript=1 "
-/> </ noscript >
-<! - Finalizar código de píxel de Facebook ->    
+  <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3290960020986065');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3290960020986065&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->    
       
 
       
-<! - Pega lo siguiente en <body> ->
-      <! - Pegue lo siguiente en el <head> ->
-< link  href = " https://unpkg.com/video.js@7/dist/video-js.min.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+<!-- Paste the following into the <body> -->
+      <!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
-<! - Pega lo siguiente en <body> ->
-<! - Pegue lo siguiente en el <head> ->
-< link  href = " https://unpkg.com/video.js@7/dist/video-js.min.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+<!-- Paste the following into the <body> -->
+<!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
-<! - Pegue lo siguiente en el <head> ->
-< link  href = " https://unpkg.com/video.js@7/dist/video-js.min.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+<!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
-<! - Pegue lo siguiente en el <head> ->
-< link  href = " https://unpkg.com/video.js@7/dist/video-js.min.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+<!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
-<! - Pegue lo siguiente en el <head> ->
-< link  href = " https://unpkg.com/video.js@7/dist/video-js.min.css " rel = " hoja de estilo " >
-< link  href = " https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css " rel = " stylesheet " >
+<!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
 
 
-<! - Pega lo siguiente en <body> ->
-< video  id = " videojs " class = " video-js vjs-fluid vjs-default-skin vjs-big-play-centrado " controles  preload = " auto " autoplay  fluid = " true " poster = " https: // github. com / serviciosinformaticoselbachi / canalmasuruguay / blob / master / Images / prueba-logo.png? raw = true " >
+<!-- Paste the following into the <body> -->
+<video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" autoplay fluid="true" poster="https://github.com/serviciosinformaticoselbachi/canalmasuruguay/blob/master/Images/prueba-logo.png?raw=true" >
 
-  < source  src = " https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " type = " application / x-mpegURL " >
+  <source src="https://livefocamundo.com:8081/8670/index.m3u8" type="application/x-mpegURL">
 
-</ video >
+</video>
 
-< script  src = " https://unpkg.com/video.js@7/dist/video.min.js " > </ script >
-< script  src = " https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js " > </ script >
-< script  type = " text / javascript " >
- var  player  =  videojs ( 'videojs' ) ; </ script >
+<script src="https://unpkg.com/video.js@7/dist/video.min.js"></script>
+<script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+<script type="text/javascript">
+ var player = videojs('videojs');</script>
           
           
 
-< p  align = " center " > ↓↓↓ SI NO SE VE EL VIDEO ELIGE TU REPRODUCTOR ABAJO ↓↓↓ </ p >
+<p align="center">↓↓↓SI NO SE VE EL VIDEO ELIGE TU REPRODUCTOR ABAJO↓↓↓</p>
 
 
 
-< Div  align =" centro " > < un  href =" https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " alt =" Android HTTP " > < img  src =" https: // tv .tvcontrolcp.com: 2000 / system / theme / Material / images / android.gif " border =" 0 "/> </ a >
-< Un  href =" https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " alt =" Blackberry " > < img  src =" https://tv.tvcontrolcp.com:2000/system/ theme / Material / images / blackberry.gif " border =" 0 "/> </ a >
-< Un  href =" https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " alt =" Android RTSP " > < img  src =" https://tv.tvcontrolcp.com:2000/system /theme/Material/images/android.gif " border =" 0 "/> </ a >
-< Un  href =" https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " alt =" Iphone " > < img  src =" https://tv.tvcontrolcp.com:2000/system/ theme / Material / images / iphone.gif " border =" 0 "/> </ a > 
-< Un  href =" https://5e36c064a2f6a.streamlock.net:1936/8230/8230/playlist.m3u8 " alt =" VLC " > < img  src =" https://github.com/serviciosinformaticoselbachi/canalmasuruguay/blob/ master / Images / vlc% 20 (1) .gif? raw = true " border =" 0 "/> </ a > </ div > </ p >
-  </ div >
+<div align="center"><a href="https://livefocamundo.com:8081/8670/index.m3u8" alt="Android HTTP"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/android.gif" border="0" /></a>
+<a href="https://livefocamundo.com:8081/8670/index.m3u8" alt="Blackberry"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/blackberry.gif" border="0" /></a>
+<a href="https://livefocamundo.com:8081/8670/index.m3u8" alt="Android RTSP"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/android.gif" border="0" /></a>
+<a href="https://livefocamundo.com:8081/8670/index.m3u8" alt="Iphone"><img src="https://tv.tvcontrolcp.com:2000/system/theme/Material/images/iphone.gif" border="0" /></a> 
+<a href="https://livefocamundo.com:8081/8670/index.m3u8" alt="VLC"><img src="https://github.com/serviciosinformaticoselbachi/canalmasuruguay/blob/master/Images/vlc%20(1).gif?raw=true" border="0" /></a></div></p>
+  </div>
 
-  < div  class = " col-3 col-s-20 " >
-    < div  class = " aparte " >
+  <div class="col-3 col-s-20">
+    <div class="aside">
    
 
       
       
-            < Br >
-   < div  id = " fb-root " > </ div >
-< script  async  defer  crossorigin = " anonymous " src = " https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=2227058734023954&autoLogAppEvents=1 " nonce = " ypLJqIr4 " > </ script >
+            <br>
+   <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0&appId=2227058734023954&autoLogAppEvents=1" nonce="ypLJqIr4"></script>
 
 
-< div  class = " fb-page " data-href = " https://www.facebook.com/CanalmasUruguay " data-tabs = " timeline " data-width = "" data-height = "" data-small-header = " false " data-adapt-container-width = " true " data-hide-cover = " false " data-show-facepile = " true " > < blockquote  cite = " https: //www.facebook.com / CanalmasUruguay " class ="fb-XFBML-parse-ignore " > < un  href =" https://www.facebook.com/CanalmasUruguay " > Canal Mas </ a > </ blockquote > </ div >
+<div class="fb-page" data-href="https://www.facebook.com/CanalmasUruguay" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/CanalmasUruguay" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CanalmasUruguay">Canal Mas</a></blockquote></div>
 
 
 
 
       
-    </ div >
-  </ div >
-</ div >
+    </div>
+  </div>
+</div>
 
 
- <! - Pega lo siguiente en <body> ->
-< video  id = " videojs " class = " video-js vjs-fluid vjs-default-skin vjs-big-play-centrado " controles  preload = " auto " autoplay  fluid = " true " poster = " https: // github. com / serviciosinformaticoselbachi / canalmasuruguay / blob / master / Images / prueba-logo.png? raw = true " >
+ <!-- Paste the following into the <body> -->
+<video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" autoplay fluid="true" poster="https://github.com/serviciosinformaticoselbachi/canalmasuruguay/blob/master/Images/prueba-logo.png?raw=true" >
 
-  < source  src = " https://livefocamundo.com:8081/8670/index.m3u8 " type = " application / x-mpegURL " >
+  <source src="https://livefocamundo.com:8081/8670/index.m3u8" type="application/x-mpegURL">
 
-</ video >
+</video>
 
-< script  src = " https://unpkg.com/video.js@7/dist/video.min.js " > </ script >
-< script  src = " https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js " > </ script >
-< script  type = " text / javascript " >
- var  player  =  videojs ( 'videojs' ) ; </ script >
+<script src="https://unpkg.com/video.js@7/dist/video.min.js"></script>
+<script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+<script type="text/javascript">
+ var player = videojs('videojs');</script>
 
-
-
-< div  align = " centro " >
-< P > < un  href = " https://play.google.com/store/apps/details?id=canal.mas5 " >
-< img  src = " https://i.ibb.co/8cmRRMs/GOOGLEPLAY.png " alt = " GOOGLEPLAY " width = " 20% " height = " auto " margin = " 0,1% " > </ p >
-</ div >
+</body>
 
 
-</ cuerpo >
+  </div>
+</div>
+<div class="footer">
+  <p>Copyright © 2020 Canal Mas - Todos los derechos reservados.</p>
+</div>
 
-
-  </ div >
-</ div >
-< div  class = " pie de página " >
-  < p > Copyright © 2020 Canal Mas - Todos los derechos reservados. </ p >
-</ div >
-
-</ cuerpo >
-</ html >
-
+</body>
+</html>
