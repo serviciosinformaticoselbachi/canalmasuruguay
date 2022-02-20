@@ -1,156 +1,101 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-img{
-    max-width: 100%;
+body {
+	background: #F4F4FA;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container-all{
-    position: relative;
-    max-width: 1000px;
-    width: 100%;
-    border-radius: 6px;
-    overflow: hidden;
+header {
+	background: #1D87D8;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
-.slide{
-    display: flex;
-    transform: translate3d(0, 0, 0);
-    transition: all 600ms;
-    animation-name: autoplay;
-    animation-duration: 6.5s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+header .titulo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
-.item-slide{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    flex-grow: 0;
-    max-width: 100%;
+main {
+	margin-top: 150px;
 }
 
-.pagination{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+main .contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
 }
 
-.pagination-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    overflow: hidden;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0 10px;
-    text-align: center;
-    transition: all 300ms;
+/* ------------------------- */
+/* Estilos CSS del Reproductor */
+/* ------------------------- */
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
 }
 
-.pagination-item:hover{
-    transform: scale(2);
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2d5f85;
 }
 
-.pagination-item img{
-    display: inline-block;
-    max-width: none;
-    height: 100%;
-    transform: scale(1);
-    opacity: 0;
-    transition: all 300ms;
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
 }
 
-.pagination-item:hover img{
-    opacity: 1;
-    transform: scale(1);
+.fm-video .vjs-slider {
+	background: #2d5f85;
 }
 
-
-input[id="1"]:checked ~ .slide{
-    animation: none;
-    transform: translate3d(0, 0, 0);
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
 }
 
-input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
-    background: #fff;
+.fm-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
 }
 
-input[id="2"]:checked ~ .slide{
-    animation: none;
-    transform: translate3d(calc(-100% * 1), 0, 0);
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
 }
 
-input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
-    background: #fff;
+article {
+	margin: 50px 0;
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 40px;
 }
 
-
-input[id="3"]:checked ~ .slide{
-    animation: none;
-    transform: translate3d(calc(-100% * 2), 0, 0);
+article h2 {
+	color: #2D5F85;
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 20px;
 }
 
-input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
-    background: #fff;
+@media screen and (max-width: 600px) {
+	header {
+		position: relative;
+		height: auto;
+	}
+
+	main {
+		margin-top: 50px;
+	}
 }
-
-
-@keyframes autoplay{
-    33%{
-        transform: translate3d(calc(-100% * 0), 0, 0);
-    }
-    
-    66%{
-        transform: translate3d(calc(-100% * 1), 0, 0);
-    }
-    
-    100%{
-        transform: translate3d(calc(-100% * 2), 0, 0);
-    }
-}
-
-.embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
