@@ -25,7 +25,15 @@
 
 
 
- <iframe allowfullscreen src="https://tv.clientetvstudio.net/server-stream-video-widget/uruguay" height="100%" width="100%" frameBorder="0"></iframe>
+<script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js">
+  </script>
+</head>
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "https://tv.clientetvstudio.net:3507/multi_web/play_720.m3u8", parentId: "#player"});
+  </script>
 
 <br/>
 <tr/>
